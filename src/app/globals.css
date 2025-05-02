@@ -1,5 +1,8 @@
 /* globals.css */
 
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Enables smooth scrolling across the entire page */
 html {
   scroll-behavior: smooth;
@@ -23,7 +26,7 @@ html {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: 'Poppins', sans-serif; /* Set Poppins globally */
 }
 
 @layer utilities {
@@ -35,4 +38,41 @@ body {
   .dark\:text-foreground {
     color: var(--text-color);
   }
+
+  /* Custom pixel UI theme helper classes */
+  .pixel-ui {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--text-color);
+  }
+
+  .pixel-ui-day {
+    background-color: #f0f0f0;
+    color: #171717;
+  }
+
+  .pixel-ui-night {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
 }
+
+/* Add this to your global CSS file or the component's style */
+
+.pixelated-border {
+  border: 4px solid #fff;
+  border-radius: 8px;
+  background: #1f1f1f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pixelated-border li {
+  border: 4px solid #444;
+  background: #333;
+  font-family: 'Press Start 2P', cursive;
+  text-align: left;
+}
+
+.pixelated-border li:hover {
+  background-color: #444;
+}
+
