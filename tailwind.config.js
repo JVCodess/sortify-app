@@ -1,13 +1,23 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // Enable class-based dark mode
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}', // Ensure components folder is included
-    './app/**/*.{js,ts,jsx,tsx}', // Ensure app folder is included
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "var(--background-color)",
+        foreground: "var(--text-color)",
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],  // Ensure Poppins is set here
+        pixel: ['"Press Start 2P"', 'cursive'],
+      },
+      fontSize: {
+        base: "var(--font-size)",
+      },
+    },
   },
-  plugins: [],
-};
+}
