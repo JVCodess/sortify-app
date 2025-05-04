@@ -27,7 +27,7 @@ const SortifyDemo = () => {
   }, []);
 
   const sortSongs = (criteria: string) => {
-    let sortedSongs = [...songs];
+    const sortedSongs = [...songs].sort();
     if (criteria === 'title') sortedSongs.sort((a, b) => a.title.localeCompare(b.title));
     else if (criteria === 'artist') sortedSongs.sort((a, b) => a.artist.localeCompare(b.artist));
     else if (criteria === 'year') sortedSongs.sort((a, b) => new Date(a.year).getTime() - new Date(b.year).getTime());
