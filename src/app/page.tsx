@@ -1,9 +1,12 @@
 // src/app/page.tsx
-import Image from 'next/image';
+
 import Navbar from './Navbar';  
 import Hero from './Hero';  
-import Songs from './Songs';  
+import SortifyDemo from './SortifyDemo';  
 import Showcase from './Showcase';
+import Shop from './Shop';
+import Contact from './Contact';
+import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -12,7 +15,10 @@ export default function Home() {
       <main>
         <Hero />
         <Showcase /> {/* Add the Showcase component */}
-        <Songs />
+        <SortifyDemo />
+        <Shop />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );
