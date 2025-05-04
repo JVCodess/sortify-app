@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
 const artistImages = [
-  'src/sza.png',
-  'src/xxx-2.png',
-  'src/lil-baby.png',
-  'src/mac-miller.jpg',
+  '/public/sza.png',
+  '/public/xxx-2.png',
+  '/public/lil-baby.png',
+  '/public/mac-miller.jpg',
 ];
 
 const Hero = () => {
