@@ -29,7 +29,7 @@ const Contact = () => {
         {!submitted ? (
           <>
             <p className="text-md text-gray-300 mb-6">
-              We'd love to hear from you. Send us a message below.
+              We&apos;d love to hear from you. Send us a message below.
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
